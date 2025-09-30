@@ -63,6 +63,21 @@
       font-weight: 600;
     }
 
+    .about-images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* espaço entre as imagens */
+  margin-bottom: 2rem; /* espaço abaixo das imagens */
+}
+
+.about-images img {
+  width: 200px; /* largura fixa */
+  height: 150px; /* altura fixa */
+  object-fit: cover; /* mantém proporção sem distorcer */
+  border-radius: 8px; /* borda arredondada opcional */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
     .about p {
       text-align: center;
       max-width: 750px;
@@ -122,6 +137,7 @@
     }
     .project-card a:hover { color: var(--primary); }
 
+    
     #contact p {
       text-align: center;
       font-size: 1rem;
@@ -159,6 +175,11 @@
 
   <section id="about" class="about">
     <h2>Sobre Mim</h2>
+     <div class="about-images">
+    <img src="imagem1.jpg" alt="Descrição 1">
+    <img src="imagem2.jpg" alt="Descrição 2">
+    <img src="imagem3.jpg" alt="Descrição 3">
+  </div>
     <p>Comecei minha trajetória profissional ainda na adolescência, atuando como UI/UX Designer em uma startup, onde tive a oportunidade de colaborar diretamente com uma equipe de desenvolvimento web. Essa experiência foi fundamental para meu crescimento, permitindo-me adquirir sólido aprendizado prático e atender mais de 20 clientes com soluções visuais diversas e impactantes.
 
 Ao longo do tempo, trabalhei com ferramentas como Figma, Adobe XD, Illustrator, Photoshop, Canva, WordPress, Elementor e Oxygen Builder, desenvolvendo interfaces intuitivas e layouts funcionais que uniram estética e usabilidade.
