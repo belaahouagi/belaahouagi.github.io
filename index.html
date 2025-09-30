@@ -71,6 +71,16 @@
       color: var(--muted);
     }
 
+    .profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* deixa a foto redonda */
+  object-fit: cover;  /* corta a imagem sem distorcer */
+  border: 3px solid #fff; /* borda branca */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* sombra suave */
+  margin-bottom: 1rem; /* espaço entre a foto e o título */
+}
+
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -137,6 +147,7 @@
 </head>
 <body>
   <header>
+    <img src="img/minha-foto.jpg" alt="Foto de Isabela Ahouagi" class="profile-pic">
     <h1>Isabela Borges Martins Ahouagi</h1>
     <p>UI/UX Designer & Web Developer</p>
     <nav>
