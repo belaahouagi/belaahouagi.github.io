@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Isabela Ahouagi</title>
+  <title>Portfolio - Isabela Ahouagi</title>
   <style>
     :root {
       --primary: #0b5394;
@@ -64,19 +64,19 @@
     }
 
     .about-images {
-  display: flex;
-  justify-content: center;
-  gap: 1rem; /* espaço entre as imagens */
-  margin-bottom: 2rem; /* espaço abaixo das imagens */
-}
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
 
-.about-images img {
-  width: 100px; /* largura fixa */
-  height: 75px; /* altura fixa */
-  object-fit: cover; /* mantém proporção sem distorcer */
-  border-radius: 8px; /* borda arredondada opcional */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+    .about-images img {
+      width: 100px;
+      height: 75px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
 
     .about p {
       text-align: center;
@@ -87,65 +87,65 @@
     }
 
     .certificates {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  max-width: 1100px;
-  margin: 2rem auto 4rem;
-}
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 2rem auto 4rem;
+    }
 
-.certificate-card {
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  text-align: center;
-  padding: 1rem;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
+    .certificate-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      padding: 1rem;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
 
-.certificate-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-}
+    .certificate-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    }
 
-.certificate-card img {
-  max-width: 100%;
-  height: 120px;
-  object-fit: contain;
-  margin-bottom: 0.8rem;
-}
+    .certificate-card img {
+      max-width: 100%;
+      height: 120px;
+      object-fit: contain;
+      margin-bottom: 0.8rem;
+    }
 
-.certificate-logo {
-  width: 60px;
-  margin-bottom: 0.5rem;
-}
+    .certificate-logo {
+      width: 60px;
+      margin-bottom: 0.5rem;
+    }
 
-.certificate-card p {
-  font-size: 0.95rem;
-  color: var(--text);
-  margin-bottom: 0.5rem;
-}
+    .certificate-card p {
+      font-size: 0.95rem;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
 
-.certificate-card a {
-  color: var(--secondary);
-  text-decoration: none;
-  font-weight: 600;
-}
+    .certificate-card a {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: 600;
+    }
 
-.certificate-card a:hover {
-  color: var(--primary);
-}
+    .certificate-card a:hover {
+      color: var(--primary);
+    }
 
     .profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%; /* deixa a foto redonda */
-  object-fit: cover;  /* corta a imagem sem distorcer */
-  border: 3px solid #fff; /* borda branca */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* sombra suave */
-  margin-bottom: 1rem; /* espaço entre a foto e o título */
-}
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      margin-bottom: 1rem;
+    }
 
     .projects {
       display: grid;
@@ -188,7 +188,6 @@
     }
     .project-card a:hover { color: var(--primary); }
 
-    
     #contact p {
       text-align: center;
       font-size: 1rem;
@@ -211,339 +210,327 @@
       color: var(--muted);
     }
 
+    /* ===== BRANDING SECTION ===== */
+    #branding {
+      max-width: 1100px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+    }
 
-    /* ===== IDENTIDADE VISUAL ===== */
-#branding {
-  max-width: 1100px;
-  margin: 4rem auto;
-  padding: 0 1rem;
-}
+    .branding-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
 
-.branding-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
+    .branding-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      cursor: pointer;
+    }
 
-.branding-card {
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  cursor: pointer;
-}
+    .branding-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    }
 
-.branding-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-}
+    .branding-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
 
-.branding-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
+    .branding-card .info {
+      padding: 1rem;
+      text-align: center;
+    }
 
-.branding-card .info {
-  padding: 1rem;
-  text-align: center;
-}
+    .branding-card h3 {
+      margin-bottom: 0.4rem;
+      font-size: 1.15rem;
+      color: var(--text);
+    }
 
-.branding-card h3 {
-  margin-bottom: 0.4rem;
-  font-size: 1.15rem;
-  color: var(--text);
-}
+    .branding-card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
 
-.branding-card p {
-  font-size: 0.9rem;
-  color: var(--muted);
-}
+    /* ===== PDF MODAL ===== */
+    #pdf-modal {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.7);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
 
-/* ===== MODAL DE PRÉVIA PDF ===== */
-#pdf-modal {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.7);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
+    #pdf-modal iframe {
+      width: 80%;
+      height: 80%;
+      border: none;
+      border-radius: var(--radius);
+      background: #fff;
+    }
 
-#pdf-modal iframe {
-  width: 80%;
-  height: 80%;
-  border: none;
-  border-radius: var(--radius);
-  background: #fff;
-}
+    #pdf-modal .close-btn {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      background: #fff;
+      color: var(--text);
+      border: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
 
-#pdf-modal .close-btn {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  background: #fff;
-  color: var(--text);
-  border: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
+    #pdf-modal .close-btn:hover {
+      background: var(--secondary);
+      color: #fff;
+    }
 
-#pdf-modal .close-btn:hover {
-  background: var(--secondary);
-  color: #fff;
-}
+    /* ===== LANGUAGE BUTTON ===== */
+    .language-switch {
+      margin-top: 1.5rem;
+      text-align: center;
+    }
 
-    /* ===== BOTÃO DE IDIOMA ===== */
-.language-switch {
-  margin-top: 1.5rem;
-  text-align: center;
-}
+    .language-switch a {
+      display: inline-block;
+      background: #fff;
+      color: var(--primary);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: all 0.25s ease;
+    }
 
-.language-switch a {
-  display: inline-block;
-  background: #fff;
-  color: var(--primary);
-  padding: 0.5rem 1rem;
-  border-radius: var(--radius);
-  font-weight: 600;
-  text-decoration: none;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  transition: all 0.25s ease;
-}
-
-.language-switch a:hover {
-  background: var(--secondary);
-  color: #fff;
-  transform: translateY(-3px);
-}
+    .language-switch a:hover {
+      background: var(--secondary);
+      color: #fff;
+      transform: translateY(-3px);
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="minha-foto.jpg" alt="Foto de Isabela Ahouagi" class="profile-pic">
+    <img src="minha-foto.jpg" alt="Photo of Isabela Ahouagi" class="profile-pic">
     <h1>Isabela Borges Martins Ahouagi</h1>
-    <p>Estudante de Análise e Desenvolvimento de Sistemas e Letras (Inglês) | Experiência como UX/UI Designer</p>
+    <p>Systems Analysis and Development Student & English Major | Experience as UX/UI Designer</p>
     <nav>
-      <a href="#about">Sobre Mim</a>
-      <a href="#projects">Projetos Figma</a>
-      <a href="#branding">Identidades Visuais</a>
-      <a href="#certificates">Certificados</a>
-      <a href="#contact">Contato</a>
+      <a href="#about">About Me</a>
+      <a href="#projects">Figma Projects</a>
+      <a href="#branding">Brand Identities</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
     </nav>
     <div class="language-switch">
-  <a href="index-eng.html">🌎 English Version</a>
-</div>
+      <a href="index.html">🇧🇷 Portuguese Version</a>
+    </div>
   </header>
 
   <section id="about" class="about">
-    <h2>Sobre Mim</h2>
-    <p>Comecei minha carreira como UI/UX Designer em uma startup, colaborando com desenvolvimento web e atendendo mais de 20 clientes. Tenho experiência com Figma, Adobe XD, Illustrator, Photoshop, Canva, WordPress, Elementor e Oxygen Builder, criando interfaces funcionais e estéticas. Atualmente, estudo Análise e Desenvolvimento de Sistemas e Letras – Inglês, buscando aplicar criatividade e tecnologia em projetos inovadores.</section>
+    <h2>About Me</h2>
+    <p>I started my career as a UI/UX Designer at a startup, collaborating in web development and serving over 20 clients. I have experience with Figma, Adobe XD, Illustrator, Photoshop, Canva, WordPress, Elementor, and Oxygen Builder, creating functional and aesthetic interfaces. Currently, I’m pursuing degrees in Systems Analysis and Development and English Language, seeking to combine creativity and technology in innovative projects.</p>
+  </section>
 
   <section id="projects">
-    <h2>Projetos Figma</h2>
+    <h2>Figma Projects</h2>
     <div class="projects">
       <div class="project-card">
-        <img src="portal-aluno.jpg" alt="Projeto 1">
+        <img src="portal-aluno.jpg" alt="Student Portal Project">
         <div class="info">
-          <h3>Portal do Aluno</h3>
-          <a href="https://www.figma.com/design/CaBCdCcNeCNDmYitu8dvbn/Portal-do-Aluno?node-id=2-564&t=EYTPZJKDl81WrHs1-1" target="_blank">Ver Projeto</a>
+          <h3>Student Portal</h3>
+          <a href="https://www.figma.com/design/CaBCdCcNeCNDmYitu8dvbn/Portal-do-Aluno?node-id=2-564&t=EYTPZJKDl81WrHs1-1" target="_blank">View Project</a>
         </div>
       </div>
       <div class="project-card">
-        <img src="portal-professor.jpg" alt="Projeto 2">
+        <img src="portal-professor.jpg" alt="Teacher Portal Project">
         <div class="info">
-          <h3>Portal do Professor</h3>
-         <a href="https://www.figma.com/design/czQAVMynhzsKHLtQw2sqzH/Portal-do-Professor?node-id=0-1&m=dev&t=Z0oJTGSeyacroYHX-1" target="_blank">Ver Projeto</a>
+          <h3>Teacher Portal</h3>
+          <a href="https://www.figma.com/design/czQAVMynhzsKHLtQw2sqzH/Portal-do-Professor?node-id=0-1&m=dev&t=Z0oJTGSeyacroYHX-1" target="_blank">View Project</a>
         </div>
       </div>
-            <div class="project-card">
-        <img src="bela-papelaria.jpg" alt="Projeto 3">
+      <div class="project-card">
+        <img src="bela-papelaria.jpg" alt="Bela Papelaria Project">
         <div class="info">
           <h3>Bela Papelaria</h3>
-          <a href="https://www.figma.com/proto/IIqmJxljJO1a7gBpAphoGh/Bela-Papelaria?node-id=1-2&t=YskgF9U8PDrMqiBd-1" target="_blank">Ver Projeto</a>
+          <a href="https://www.figma.com/proto/IIqmJxljJO1a7gBpAphoGh/Bela-Papelaria?node-id=1-2&t=YskgF9U8PDrMqiBd-1" target="_blank">View Project</a>
         </div>
       </div>
     </div>
     <br>
-<div class="projects">
-      <div class="project-card">
-        <img src="salgado-advocacia.jpg" alt="Projeto 1">
-        <div class="info">
-          <h3>Salgado Advocacia</h3>
-         <a href="https://www.figma.com/proto/QdSXyZjEgIcwEx7SI6hrrI/Salgado-advocacia?node-id=0-1&t=BHcTLxnYosz86o97-1" target="_blank">Ver Projeto</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="marco-joias.jpg" alt="Projeto 2">
-        <div class="info">
-          <h3>Marco Joias</h3>
-          <a href="https://www.figma.com/proto/iSUiOImLcXaKPhuImrP2vp/Marcos-Joias-Template?node-id=0-1&t=V8NZH7ElQ4ZRcwHF-1#" target="_blank">Ver Projeto</a>
-        </div>
-      </div>
-            <div class="project-card">
-        <img src="bella-vida.jpg" alt="Projeto 3">
-        <div class="info">
-          <h3>Bella Vida</h3>
-          <a href="https://www.figma.com/proto/ofIGmbbECrtTrJtD7DrVMi/Site-Kombucha-Desktop?node-id=0-1&t=fkHOvHz1BYzqtbDj-1" target="_blank">Ver Projeto</a>
-        </div>
-      </div>
-    </div>
-<br>
     <div class="projects">
       <div class="project-card">
-        <img src="meindica.jpg" alt="Projeto 1">
+        <img src="salgado-advocacia.jpg" alt="Salgado Advocacia Project">
         <div class="info">
-          <h3>Me indica</h3>
-         <a href="https://www.figma.com/proto/tDNNhagpwQNkehJEyh7JjX/MeIndica?node-id=0-1&t=qiD829iVr0q625mG-1" target="_blank">Ver Projeto</a>
+          <h3>Salgado Law Firm</h3>
+          <a href="https://www.figma.com/proto/QdSXyZjEgIcwEx7SI6hrrI/Salgado-advocacia?node-id=0-1&t=BHcTLxnYosz86o97-1" target="_blank">View Project</a>
         </div>
       </div>
       <div class="project-card">
-        <img src="brincologoexisto.jpg" alt="Projeto 2">
+        <img src="marco-joias.jpg" alt="Marco Joias Project">
+        <div class="info">
+          <h3>Marco Jewelry</h3>
+          <a href="https://www.figma.com/proto/iSUiOImLcXaKPhuImrP2vp/Marcos-Joias-Template?node-id=0-1&t=V8NZH7ElQ4ZRcwHF-1#" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="bella-vida.jpg" alt="Bella Vida Project">
+        <div class="info">
+          <h3>Bella Vida</h3>
+          <a href="https://www.figma.com/proto/ofIGmbbECrtTrJtD7DrVMi/Site-Kombucha-Desktop?node-id=0-1&t=fkHOvHz1BYzqtbDj-1" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="projects">
+      <div class="project-card">
+        <img src="meindica.jpg" alt="Me Indica Project">
+        <div class="info">
+          <h3>Me Indica</h3>
+          <a href="https://www.figma.com/proto/tDNNhagpwQNkehJEyh7JjX/MeIndica?node-id=0-1&t=qiD829iVr0q625mG-1" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="brincologoexisto.jpg" alt="Brinco logo existo Project">
         <div class="info">
           <h3>Brinco logo existo</h3>
-          <a href="https://www.figma.com/proto/N74wF0m6o9SP9ZA3M65kg3/LAYOUT-ADAPTADO?node-id=9-4477&t=X8nmjzH5sH45BMVs-1" target="_blank">Ver Projeto</a>
-        </div>
-      </div>
-            <div class="project-card">
-        <div class="info">
-          <h3></h3>
-          <a href="" target="_blank"></a>
+          <a href="https://www.figma.com/proto/N74wF0m6o9SP9ZA3M65kg3/LAYOUT-ADAPTADO?node-id=9-4477&t=X8nmjzH5sH45BMVs-1" target="_blank">View Project</a>
         </div>
       </div>
     </div>
-    
   </section>
 
-<section id="branding">
-  <h2>Identidades Visuais</h2>
-  <div class="branding-grid">
-    <div class="branding-card" data-pdf="vtigamer-logo.pdf">
-      <img src="thumb-vtigamer.jpg" alt="Identidade Visual 1">
-      <div class="info">
-        <h3>Marca - VtiGamer</h3>
-        <p>Identidade visual Vti Gamer.</p>
+  <section id="branding">
+    <h2>Brand Identities</h2>
+    <div class="branding-grid">
+      <div class="branding-card" data-pdf="vtigamer-logo.pdf">
+        <img src="thumb-vtigamer.jpg" alt="VtiGamer Brand">
+        <div class="info">
+          <h3>VtiGamer</h3>
+          <p>VtiGamer visual identity.</p>
+        </div>
+      </div>
+      <div class="branding-card" data-pdf="vexs-logo.pdf">
+        <img src="thumb-vexs.jpg" alt="Vexs Brand">
+        <div class="info">
+          <h3>Vexs</h3>
+          <p>Logo design and institutional materials for VEXS.</p>
+        </div>
       </div>
     </div>
-
-    <div class="branding-card" data-pdf="vexs-logo.pdf">
-      <img src="thumb-vexs.jpg" alt="Identidade Visual 2">
-      <div class="info">
-        <h3>Marca - Vexs</h3>
-        <p>Design de logotipo e material institucional da VEXS.</p>
-      </div>
-    </div>
-    </div>
-  </div>
-</section>
-  
+  </section>
 
   <section id="certificates">
-  <h2>Certificados</h2>
-  <div class="certificates">
-    <!-- Certificados FIAP -->
-    <div class="certificate-card">
-      <img src="https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/46771/5e9977ce5737aee4bb49407e6d8182ae/certificado.png" alt="Design Gráfico - FIAP">
-      <div class="info">
-        <img src="fiap-logo.png" alt="FIAP Logo" class="certificate-logo">
-        <p>Design Gráfico - FIAP</p>
-        <a href="https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/46771/5e9977ce5737aee4bb49407e6d8182ae/certificado.png" target="_blank">Ver Certificado</a>
+    <h2>Certificates</h2>
+    <div class="certificates">
+      <div class="certificate-card">
+        <img src="https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/46771/5e9977ce5737aee4bb49407e6d8182ae/certificado.png" alt="Graphic Design - FIAP">
+        <div class="info">
+          <img src="fiap-logo.png" alt="FIAP Logo" class="certificate-logo">
+          <p>Graphic Design - FIAP</p>
+          <a href="https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/46771/5e9977ce5737aee4bb49407e6d8182ae/certificado.png" target="_blank">View Certificate</a>
+        </div>
+      </div>
+
+      <div class="certificate-card">
+        <img src="https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/47135/97f7d85e02493670181399070ec0ae9f/certificado.png" alt="Design Thinking - FIAP">
+        <div class="info">
+          <img src="fiap-logo.png" alt="FIAP Logo" class="certificate-logo">
+          <p>Design Thinking - FIAP</p>
+          <a href="https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/47135/97f7d85e02493670181399070ec0ae9f/certificado.png" target="_blank">View Certificate</a>
+        </div>
+      </div>
+
+      <div class="certificate-card">
+        <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-41de7cc8-8b24-4a5a-a9ff-b71c1f1e6e7e.jpg" alt="UX Design - Udemy">
+        <div class="info">
+          <img src="udemy-logo.png" alt="Udemy Logo" class="certificate-logo">
+          <p>UX Design - Udemy</p>
+          <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-41de7cc8-8b24-4a5a-a9ff-b71c1f1e6e7e.jpg" target="_blank">View Certificate</a>
+        </div>
+      </div>
+
+      <div class="certificate-card">
+        <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-97e1c03b-3a9f-49ce-b8b0-4eaa77a45c12.jpg" alt="UI Design - Udemy">
+        <div class="info">
+          <img src="udemy-logo.png" alt="Udemy Logo" class="certificate-logo">
+          <p>UI Design - Udemy</p>
+          <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-97e1c03b-3a9f-49ce-b8b0-4eaa77a45c12.jpg" target="_blank">View Certificate</a>
+        </div>
+      </div>
+
+      <div class="certificate-card">
+        <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-3d19b57a-64df-4b38-a2c4-3b0aab4ce454.jpg" alt="Adobe Illustrator Essentials - Udemy">
+        <div class="info">
+          <img src="udemy-logo.png" alt="Udemy Logo" class="certificate-logo">
+          <p>Adobe Illustrator Essentials - Udemy</p>
+          <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-3d19b57a-64df-4b38-a2c4-3b0aab4ce454.jpg" target="_blank">View Certificate</a>
+        </div>
       </div>
     </div>
-
-    <div class="certificate-card">
-      <img src="https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/47135/97f7d85e02493670181399070ec0ae9f/certificado.png" alt="Design Thinking - FIAP">
-      <div class="info">
-        <img src="fiap-logo.png" alt="FIAP Logo" class="certificate-logo">
-        <p>Design Thinking - FIAP</p>
-        <a href="https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/47135/97f7d85e02493670181399070ec0ae9f/certificado.png" target="_blank">Ver Certificado</a>
-      </div>
-    </div>
-
-    <!-- Certificados Udemy -->
-    <div class="certificate-card">
-       <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-0c4cf998-0982-4c2b-bdad-69ee315d5c37.jpg?v=1647562579000" alt="Design Thinking - Udemy">
-      <div class="info">
-        <img src="udemy-logo.png" alt="Udemy Logo" class="certificate-logo">
-        <p>UX & Design Thinking: Experiência do Usuário nos negócios - Udemy</p>
-        <a href="https://www.udemy.com/certificate/UC-0c4cf998-0982-4c2b-bdad-69ee315d5c37/" target="_blank">Ver Certificado</a>
-      </div>
-    </div>
-
-    <div class="certificate-card">
-    <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-H1XQ6X1H.jpg?v=1557863038000" alt="Branding Digital - Udemy">
-     <div class="info">
-        <img src="udemy-logo.png" alt="Udemy Logo" class="certificate-logo">
-        <p>Curso de Branding Digital: Estratégias de Marcas e Negócios - Udemy</p>
-        <a href="https://www.udemy.com/certificate/UC-H1XQ6X1H/" target="_blank">Ver Certificado</a>
-      </div>
-    </div>
-
-    <div class="certificate-card">
-      <img src="branco.png" alt="Photoshop - Udemy">
-       <div class="info">
-        <img src="udemy-logo.png" alt="Udemy Logo" class="certificate-logo">
-        <p>Adobe Photoshop Definitivo - Foco em design e criatividade - Udemy</p>
-        <a href="#" target="_blank">Ver Certificado</a>
-      </div>
-    </div>
-  </div>
-</section>
-
+  </section>
 
   <section id="contact">
-    <h2>Contato</h2>
-    <p>Entre em contato comigo pelas redes:</p>
+    <h2>Contact</h2>
     <p>
-      <a href="mailto:isahouagi@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/isabela-ahouagi-8092a7203" target="_blank">LinkedIn</a>
-      <a href="https://github.com/belaahouagi/" target="_blank">GitHub</a>
+      Get in touch with me through: <br><br>
+      <a href="mailto:isabelaahouagi@gmail.com">isabelaahouagi@gmail.com</a> |
+      <a href="https://www.linkedin.com/in/isabela-ahouagi-8092a7203/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/isabelaahouagi" target="_blank">GitHub</a>
     </p>
   </section>
 
   <footer>
-    <p>© 2025 Isabela Ahouagi - Portfólio</p>
+    © 2025 Isabela Ahouagi — All rights reserved.
   </footer>
 
-<!-- Modal PDF -->
-<div id="pdf-modal">
-  <button class="close-btn">&times;</button>
-  <iframe src=""></iframe>
-</div>
+  <!-- PDF MODAL -->
+  <div id="pdf-modal">
+    <button class="close-btn">&times;</button>
+    <iframe src=""></iframe>
+  </div>
 
-<script>
-  const modal = document.getElementById('pdf-modal');
-  const iframe = modal.querySelector('iframe');
-  const closeBtn = modal.querySelector('.close-btn');
+  <script>
+    const modal = document.getElementById('pdf-modal');
+    const iframe = modal.querySelector('iframe');
+    const closeBtn = modal.querySelector('.close-btn');
 
-  document.querySelectorAll('.branding-card').forEach(card => {
-    card.addEventListener('click', () => {
-      const pdf = card.dataset.pdf;
-      iframe.src = pdf;
-      modal.style.display = 'flex';
+    document.querySelectorAll('.branding-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const pdf = card.dataset.pdf;
+        iframe.src = pdf;
+        modal.style.display = 'flex';
+      });
     });
-  });
 
-  closeBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
-    iframe.src = '';
-  });
-
-  modal.addEventListener('click', e => {
-    if (e.target === modal) {
+    closeBtn.addEventListener('click', () => {
       modal.style.display = 'none';
       iframe.src = '';
-    }
-  });
-</script>
-  
+    });
+
+    modal.addEventListener('click', e => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+        iframe.src = '';
+      }
+    });
+  </script>
 </body>
 </html>
+
+       
