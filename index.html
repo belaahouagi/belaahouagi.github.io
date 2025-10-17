@@ -301,6 +301,30 @@
   background: var(--secondary);
   color: #fff;
 }
+
+    /* ===== BOTÃO DE IDIOMA ===== */
+.language-switch {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.language-switch a {
+  display: inline-block;
+  background: #fff;
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: all 0.25s ease;
+}
+
+.language-switch a:hover {
+  background: var(--secondary);
+  color: #fff;
+  transform: translateY(-3px);
+}
   </style>
 </head>
 <body>
@@ -315,6 +339,9 @@
       <a href="#certificates">Certificados</a>
       <a href="#contact">Contato</a>
     </nav>
+    <div class="language-switch">
+  <a href="index-eng.html">🌎 English Version</a>
+</div>
   </header>
 
   <section id="about" class="about">
